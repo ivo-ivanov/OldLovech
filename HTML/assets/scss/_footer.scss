@@ -239,6 +239,7 @@ footer {
 		color: $white;
 		.social-links {
 			text-align: right;
+			margin-right: 30px;
 			@media #{$sm} {
 				text-align: center;
 				margin-bottom: 10px;
@@ -277,7 +278,6 @@ footer {
 		}
 		.copyright-text {
 			font-size: 14px;
-			text-transform: uppercase;
 			@media #{$xsm} {
 				letter-spacing: 0;
 			}
