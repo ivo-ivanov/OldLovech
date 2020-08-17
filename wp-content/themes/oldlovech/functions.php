@@ -119,7 +119,24 @@ function wpblank_register_styles() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	wp_enqueue_style( 'oldlovech-style', get_template_directory_uri() . '/assets/css/style.css', array(), $theme_version );
-	wp_style_add_data( 'oldlovech-style', 'rtl', 'replace' );
+
+	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/vendor/animate.min.css', array(), $theme_version );
+
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/vendor/bootstrap.min.css', array(), $theme_version );
+
+	wp_enqueue_style( 'bootstrap-datepicker', get_template_directory_uri() . '/assets/css/vendor/bootstrap-datepicker.css', array(), $theme_version );
+
+	wp_enqueue_style( 'default', get_template_directory_uri() . '/assets/css/vendor/default.css', array(), $theme_version );
+
+	wp_enqueue_style( 'flaticon', get_template_directory_uri() . '/assets/css/vendor/flaticon.css', array(), $theme_version );
+
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/vendor/font-awesome.min.css', array(), $theme_version );
+
+	wp_enqueue_style( 'magnific-popup', get_template_directory_uri() . '/assets/css/vendor/magnific-popup.css', array(), $theme_version );
+
+	wp_enqueue_style( 'nice-select', get_template_directory_uri() . '/assets/css/vendor/nice-select.css', array(), $theme_version );
+
+	wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/css/vendor/slick.css', array(), $theme_version );
 
 
 }

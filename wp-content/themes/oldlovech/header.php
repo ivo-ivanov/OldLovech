@@ -31,24 +31,79 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<body <?php body_class(); ?>>
 
-		<header id="site-header" role="banner">
 
-			<div class="header-inner section-inner">
-
-			<?php wpblank_site_logo(); ?>
-
-			<?php if ( has_nav_menu( 'primary' ) ) { ?>
-				<div id="nav-toggle" class="" aria-expanded="false">
-		             <span></span>
-		        </div>
-
-				<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Horizontal', 'wpblank' ); ?>" role="navigation">
-					<?php wp_nav_menu( array( 'container' => false, 'theme_location' => 'primary',  ) ); ?>
-				</nav>
-			<?php } ?>
-
-			</div><!-- .header-inner -->
-
-		</header><!-- #site-header -->
 
 <div class="wrapper">
+
+	<!--====== PRELOader ======-->
+	<!-- <div class="preloader d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+		</div>
+	</div> -->
+	<!--====== HEADER START ======-->
+	<header class="header-absolute sticky-header">
+		<div class="container container-custom-one">
+			<div class="nav-container d-flex align-items-center justify-content-between">
+
+				<!-- Site Logo -->
+				<div class="site-logo">
+					<a href="index.html"><img src="<?php bloginfo('template_url');?>/assets/images/logo.png" alt="Logo"></a>
+				</div>
+
+				<!-- Main Menu -->
+				<div class="nav-menu d-lg-flex align-items-center">
+
+					<!-- Navbar Close Icon -->
+					<div class="navbar-close">
+						<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+					</div>
+
+					<!-- Mneu Items -->
+					<div class="menu-items">
+						<ul>
+							<li>
+								<a href="index.html">За Къщата</a>
+							</li>
+							<li>
+								<a href="room-grid.html">Галерия</a>
+							</li>
+							<li>
+								<a href="news.html">Забележителности</a>
+							</li>
+							<li>
+								<a href="room-grid.html">Цени</a>
+							</li>
+							<li>
+								<a href="contact.html">Резервации</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- from pushed-item -->
+					<div class="nav-pushed-item"></div>
+				</div>
+
+				<!-- Header Info Pussed To Menu Wrap -->
+				<div class="nav-push-item">
+					<!-- Header Info -->
+					<div class="header-info d-lg-flex align-items-center">
+						<div class="item">
+							<i class="fal fa-phone"></i>
+							<a href="tel:+359885875689">+359 885 875 689</a>
+						</div>
+						<div class="item">
+							<i class="fal fa-envelope"></i>
+							<a href="mailto:dmtrlalev@gmail.com">dmtrlalev@gmail.com</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Navbar Toggler -->
+				<div class="navbar-toggler">
+					<span></span><span></span><span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--====== HEADER PART END ======-->
