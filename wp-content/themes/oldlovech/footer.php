@@ -35,11 +35,27 @@
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 								</p>
 			                </div>
-			                <div class="col-md-7 order-1 order-md-2">
-			                    <div class="social-links">
-			                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-			                    </div>
-			                </div>
+
+							<?php $social = get_field('media', 'options');
+							if($social) {
+								echo '<div class="col-md-7 order-1 order-md-2">
+				                    <div class="social-links">';
+
+									foreach($social as $media) {
+
+										$class = $media['media'];
+										$url = $media['url'];
+
+										echo'<a href="'. esc_url($url) .'" target="_blank" rel="nofollow">
+											<i class="fab '. esc_attr($class) .'"></i>
+										</a>';
+
+									}
+
+									echo '</div>
+								</div>';
+							} ?>
+
 			            </div>
 			        </div>
 			    </div>

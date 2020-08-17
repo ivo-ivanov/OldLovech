@@ -33,68 +33,13 @@ function my_acf_init() {
 		));
 
 		acf_register_block(array(
-			'name'				=> 'button',
-			'title'				=> __('Button'),
-			'description'		=> __('Button'),
+			'name'				=> 'Hero',
+			'title'				=> __('hero'),
+			'description'		=> __('hero'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'custom',
-			'icon'				=> 'editor-removeformatting',
-			'keywords'			=> array( 'button'),
-			'mode' => 'edit'
-		));
-
-		acf_register_block(array(
-			'name'				=> 'preview',
-			'title'				=> __('Preview'),
-			'description'		=> __('Preview block with link to url'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'custom',
-			'icon'				=> 'visibility',
-			'keywords'			=> array( 'preview'),
-			'mode' => 'edit'
-		));
-
-		acf_register_block(array(
-			'name'				=> 'aktuelles',
-			'title'				=> __('Aktuelles'),
-			'description'		=> __('Letzte Beiträge'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'custom',
-			'icon'				=> 'media-document',
-			'keywords'			=> array( 'aktuelles', 'news'),
-			'mode' => 'edit'
-		));
-
-		acf_register_block(array(
-			'name'				=> 'impressionen',
-			'title'				=> __('Impressionen'),
-			'description'		=> __('Impressionen'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'custom',
-			'icon'				=> 'images-alt',
-			'keywords'			=> array( 'impressionen', 'galerie'),
-			'mode' => 'edit'
-		));
-
-		acf_register_block(array(
-			'name'				=> 'team',
-			'title'				=> __('Team'),
-			'description'		=> __('Teammitglieder'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'custom',
-			'icon'				=> 'businessman',
-			'keywords'			=> array( 'team', 'about us', 'Teammitglieder'),
-			'mode' => 'edit'
-		));
-
-		acf_register_block(array(
-			'name'				=> 'accordion',
-			'title'				=> __('Accordion'),
-			'description'		=> __('Accordion'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'custom',
-			'icon'				=> 'list-view',
-			'keywords'			=> array( 'Accordion'),
+			'icon'				=> 'align-right',
+			'keywords'			=> array( 'hero'),
 			'mode' => 'edit'
 		));
 
@@ -128,12 +73,7 @@ function misha_allowed_block_types( $allowed_blocks, $post ) {
 		'core/shortcode',
 		'core/group',
 		'acf/slider',
-		'acf/preview',
-		'acf/button',
-		'acf/aktuelles',
-		'acf/impressionen',
-		'acf/team',
-		'acf/accordion'
+		'acf/hero',
 	);
 
 	return $allowed_blocks;
