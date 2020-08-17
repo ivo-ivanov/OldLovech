@@ -111,6 +111,14 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/classes/class-wpblank-script-loader.php';
 
 
+// Advanced Custom Fields
+if (class_exists('ACF')) {
+	require get_template_directory() . '/inc/acf.php';
+}
+
+
+
+
 /**
  * Register and Enqueue Styles.
  */

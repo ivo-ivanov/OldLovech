@@ -102,7 +102,7 @@ textarea{height:250px;padding-top:25px}
 .input-group.input-group-two .icon{left:auto;bottom:30px;right:30px}
 .input-group.input-group-two .nice-select{background-color:#fff;padding:0 50px 0 30px;height:60px;line-height:60px}
 .input-group.input-group-two .nice-select::before{left:auto;right:30px}
-.wrapper{min-height:100vh}
+.wrapper{min-height:100vh;padding:0 30px}
 .slick-slide img{display:inline-block}
 .bg-black{background-color:#222}
 .main-btn{display:inline-block;font-weight:700;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding:0 48px;font-size:14px;line-height:60px;border-radius:0;cursor:pointer;-webkit-transition:all .4s ease-out 0s;-moz-transition:all .4s ease-out 0s;-ms-transition:all .4s ease-out 0s;-o-transition:all .4s ease-out 0s;transition:all .4s ease-out 0s;text-transform:uppercase;letter-spacing:2px;color:#777;border:2px solid #bead8e}
