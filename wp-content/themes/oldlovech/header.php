@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/images/favicon.ico" />
+		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/http://localhost:3000/wp-content/themes/oldlovech/assets/images/favicon.ico" />
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 		<?php wp_head(); ?>
@@ -33,7 +33,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-<div class="wrapper">
 
 	<!--====== PRELOader ======-->
 	<!-- <div class="preloader d-flex align-items-center justify-content-center">
@@ -47,9 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="nav-container d-flex align-items-center justify-content-between">
 
 				<!-- Site Logo -->
-				<div class="site-logo">
-					<a href="index.html"><img src="<?php bloginfo('template_url');?>/assets/images/logo.png" alt="Logo"></a>
-				</div>
+				<?php wpblank_site_logo(); ?>
 
 				<!-- Main Menu -->
 				<div class="nav-menu d-lg-flex align-items-center">
@@ -60,24 +57,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 
 					<!-- Mneu Items -->
-					<div class="menu-items">
-						<ul>
-							<li>
-								<a href="index.html">За Къщата</a>
-							</li>
-							<li>
-								<a href="room-grid.html">Галерия</a>
-							</li>
-							<li>
-								<a href="news.html">Забележителности</a>
-							</li>
-							<li>
-								<a href="room-grid.html">Цени</a>
-							</li>
-							<li>
-								<a href="contact.html">Резервации</a>
-							</li>
-						</ul>
+					<div class="menu-items" aria-label="<?php esc_attr_e( 'Horizontal', 'wpblank' ); ?>" role="navigation">
+						<?php wp_nav_menu( array( 'container' => false, 'theme_location' => 'primary',  ) ); ?>
 					</div>
 
 					<!-- from pushed-item -->
@@ -107,3 +88,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</header>
 	<!--====== HEADER PART END ======-->
+
+	<!--====== .wrapper START ======-->
+	<div class="wrapper">

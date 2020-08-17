@@ -118,8 +118,6 @@ function wpblank_register_styles() {
 
 	$theme_version = wp_get_theme()->get( 'Version' );
 
-	wp_enqueue_style( 'oldlovech-style', get_template_directory_uri() . '/assets/css/style.css', array(), $theme_version );
-
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/vendor/animate.min.css', array(), $theme_version );
 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/vendor/bootstrap.min.css', array(), $theme_version );
@@ -137,6 +135,8 @@ function wpblank_register_styles() {
 	wp_enqueue_style( 'nice-select', get_template_directory_uri() . '/assets/css/vendor/nice-select.css', array(), $theme_version );
 
 	wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/css/vendor/slick.css', array(), $theme_version );
+
+	wp_enqueue_style( 'oldlovech-style', get_template_directory_uri() . '/assets/css/style.css', array(), $theme_version );
 
 
 }

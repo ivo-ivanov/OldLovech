@@ -47,6 +47,7 @@ header {
 		.site-logo {
 			img {
 				max-width: 250px;
+				height: auto!important;
 				@media #{$lg} {
 					max-width: 200px;
 				}
