@@ -80,7 +80,7 @@ function wpblank_theme_support() {
 	 * If you're building a theme based on WPBlank Theme, use a find and replace
 	 * to change 'wpblank' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'wpblank' );
+	load_theme_textdomain( 'oldlovech' );
 
 	// Add support for full and wide align images.
 	add_theme_support( 'align-wide' );
@@ -118,8 +118,8 @@ function wpblank_register_styles() {
 
 	$theme_version = wp_get_theme()->get( 'Version' );
 
-	wp_enqueue_style( 'wpblank-style', get_stylesheet_uri(), array(), $theme_version );
-	wp_style_add_data( 'wpblank-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'oldlovech-style', get_template_directory_uri() . '/assets/css/style.css', array(), $theme_version );
+	wp_style_add_data( 'oldlovech-style', 'rtl', 'replace' );
 
 
 }
@@ -150,8 +150,8 @@ add_action( 'wp_enqueue_scripts', 'wpblank_register_scripts' );
 function wpblank_menus() {
 
 	$locations = array(
-		'primary'  => __( 'Primary Menu', 'wpblank' ),
-		'secondary'   => __( 'Secondary Menu', 'wpblank' ),
+		'primary'  => __( 'Primary Menu', 'oldlovech' ),
+		'secondary'   => __( 'Secondary Menu', 'oldlovech' ),
 	);
 
 	register_nav_menus( $locations );
