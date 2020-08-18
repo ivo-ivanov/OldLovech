@@ -34,12 +34,12 @@ function my_acf_init() {
 
 		acf_register_block(array(
 			'name'				=> 'Hero',
-			'title'				=> __('hero'),
-			'description'		=> __('hero'),
+			'title'				=> __('Hero'),
+			'description'		=> __('Hero block with heading, buttons and slider.'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'custom',
 			'icon'				=> 'align-right',
-			'keywords'			=> array( 'hero'),
+			'keywords'			=> array( 'hero', 'buttons', 'slider'),
 			'mode' => 'edit'
 		));
 
@@ -59,7 +59,7 @@ function my_acf_block_render_callback( $block ) {
 
 
 // Disabel all gutenberg blocks exept these here
-add_filter( 'allowed_block_types', 'misha_allowed_block_types', 10, 2 );
+//add_filter( 'allowed_block_types', 'misha_allowed_block_types', 10, 2 );
 
 function misha_allowed_block_types( $allowed_blocks, $post ) {
 

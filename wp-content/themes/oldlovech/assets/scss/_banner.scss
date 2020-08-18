@@ -17,25 +17,25 @@
 			}
 		}
 		.title {
-			font-size: 120px;
+			font-size: 80px;
 			line-height: 1.1;
 			font-weight: 400;
-			letter-spacing: -6px;
+			letter-spacing: -4px;
 			padding-bottom: 26px;
 			@media #{$xl} {
-				font-size: 100px;
+				font-size: 70px;
 			}
 			@media #{$lg} {
-				font-size: 86px;
+				font-size: 60px;
 			}
 			@media #{$lsm} {
 				font-size: 72px;
 			}
 			@media #{$xsm} {
-				font-size: 66px;
+				font-size: 50px;
 			}
 			@media #{$tiny} {
-				font-size: 52px;
+				font-size: 40px;
 			}
 		}
 		ul {
@@ -73,6 +73,8 @@
 	}
 
 	.banner-thumb {
+		border: 10px solid #fff;
+		box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.4);
 		.single-thumb {
 			overflow: hidden;
 			img {
@@ -82,7 +84,11 @@
 	}
 
 	&.banner-style-one {
-		padding-top: 240px;
+		padding-top: 140px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		height: 100vh;
 		@media #{$lg} {
 			padding-top: 200px;
 		}
@@ -233,4 +239,18 @@
 			}
 		}
 	}
+}
+
+.review-logo {
+	width: 85%;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+	margin-top: 40px;
+}
+
+.review-rating {
+	color: #000;
+	font-size: 30px;
 }

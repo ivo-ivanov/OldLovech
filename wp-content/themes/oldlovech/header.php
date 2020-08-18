@@ -31,9 +31,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<body <?php body_class(); ?>>
 
-
-
-
 	<!--====== PRELOader ======-->
 	<!-- <div class="preloader d-flex align-items-center justify-content-center">
 		<div class="cssload-container">
@@ -91,42 +88,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<!--====== .wrapper START ======-->
 	<div class="wrapper">
-
-		<!--====== BANNER PART START ======-->
-		<section class="banner-area banner-style-one">
-		    <div class="container container-custom-two">
-		        <div class="row align-items-center">
-		            <div class="col-lg-6 col-md-6">
-		                <div class="banner-content">
-		                    <span class="promo-tag wow fadeInDown" data-wow-delay=".3s">The ultimate luxury
-		                        experience</span>
-		                    <h1 class="title wow fadeInLeft" data-wow-delay=".5s"> The Perfect <br> Base For You
-		                    </h1>
-		                    <ul>
-		                        <li>
-		                            <a class="main-btn btn-filled wow fadeInUp" data-wow-delay=".7s" href="#">take a
-		                                tour</a>
-		                        </li>
-		                        <li>
-		                            <a class="main-btn btn-border wow fadeInUp" data-wow-delay=".9s" href="#">Learn
-		                                More</a>
-		                        </li>
-		                    </ul>
-		                </div>
-		            </div>
-		            <div class="col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0.5s">
-		                <div class="banner-thumb d-none d-md-block">
-		                    <div class="hero-slider-one">
-		                        <div class="single-thumb">
-		                            <img src="http://localhost:3000/wp-content/themes/oldlovech/assets/images/banner/01.jpg" alt="images">
-		                        </div>
-		                        <div class="single-thumb">
-		                            <img src="http://localhost:3000/wp-content/themes/oldlovech/assets/images/banner/02.jpg" alt="images">
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</section>
-		<!--====== BANNER PART ENDS ======-->

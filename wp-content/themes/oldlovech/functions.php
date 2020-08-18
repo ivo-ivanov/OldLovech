@@ -161,8 +161,18 @@ function wpblank_register_scripts() {
 	//Include WP jQuery
     wp_enqueue_script('jquery');
 
-	wp_enqueue_script( 'wpblank-js', get_template_directory_uri() . '/assets/js/custom.js', array(), $theme_version, false );
-	wp_script_add_data( 'wpblank-js', 'async', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array('jquery'), $theme_version, false );
+	wp_script_add_data( 'bootstrap', 'async', true );
+
+	wp_enqueue_script( 'wow', get_template_directory_uri() . '/assets/js/vendor/wow.min.js', array('jquery'), $theme_version, false );
+	wp_script_add_data( 'wow', 'async', true );
+
+	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/vendor/slick.min.js', array('jquery'), $theme_version, false );
+	wp_script_add_data( 'slick', 'async', true );
+
+
+	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), $theme_version, false );
+	wp_script_add_data( 'custom-js', 'async', true );
 
 }
 

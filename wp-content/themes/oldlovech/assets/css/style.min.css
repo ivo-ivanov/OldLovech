@@ -226,12 +226,13 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .breadcrumb-area .breadcrumb-text .breadcrumb-nav li.active{color:#bead8e}
 .breadcrumb-area .breadcrumb-text .breadcrumb-nav li.active::before{color:#bead8e}
 .banner-area .banner-content span.promo-tag{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:3px;padding-bottom:30px}
-.banner-area .banner-content .title{font-size:120px;line-height:1.1;font-weight:400;letter-spacing:-6px;padding-bottom:26px}
+.banner-area .banner-content .title{font-size:80px;line-height:1.1;font-weight:400;letter-spacing:-4px;padding-bottom:26px}
 .banner-area .banner-content ul li{display:inline-block}
 .banner-area .banner-content ul li:last-child{margin-left:24px}
+.banner-area .banner-thumb{border:10px solid #fff;box-shadow:0 14px 24px 0 rgba(190,173,142,0.4)}
 .banner-area .banner-thumb .single-thumb{overflow:hidden}
 .banner-area .banner-thumb .single-thumb img{animation:zoomIn 15s linear infinite}
-.banner-area.banner-style-one{padding-top:240px}
+.banner-area.banner-style-one{padding-top:140px;display:flex;flex-wrap:wrap;align-items:center;height:100vh}
 .banner-area.banner-style-two .single-banner,.banner-area.banner-style-three .single-banner{height:950px;position:relative;z-index:1;overflow:hidden}
 .banner-area.banner-style-two .single-banner .banner-bg,.banner-area.banner-style-two .single-banner .banner-overly,.banner-area.banner-style-three .single-banner .banner-bg,.banner-area.banner-style-three .single-banner .banner-overly{position:absolute;left:0;top:0;width:100%;height:100%;z-index:-2;background-size:cover;background-position:center}
 .banner-area.banner-style-two .single-banner .banner-overly,.banner-area.banner-style-three .single-banner .banner-overly{background-color:#222;z-index:-1;opacity:.6}
@@ -247,6 +248,8 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .banner-area ul.slick-dots li{display:inline-block;margin:0 5px}
 .banner-area ul.slick-dots li button{border:0;font-size:0;height:10px;width:10px;border-radius:50%;line-height:0;font-size:0}
 .banner-area ul.slick-dots li.slick-active button{background-color:#bead8e}
+.review-logo{width:85%;height:40px;background-repeat:no-repeat;background-position:left center;background-size:contain;margin-top:40px}
+.review-rating{color:#000;font-size:30px}
 .about-section{position:relative;z-index:1}
 .about-section .down-arrow-wrap{padding-bottom:125px}
 .about-section .down-arrow-wrap a.down-arrow{height:60px;width:60px;text-align:center;line-height:60px;background:#bead8e;border-radius:50%;color:#fff;box-shadow:0 14px 24px 0 rgba(190,173,142,0.3);position:relative}
@@ -877,7 +880,7 @@ header .nav-container .header-info .item:not(:last-child){margin-right:15px}
 header .nav-container .menu-items ul li a{padding:0 8px}
 header.header-three .nav-container{padding:0 10px}
 header.header-three .nav-container .menu-right-buttons>div{margin-left:5px}
-.banner-area .banner-content .title{font-size:86px}
+.banner-area .banner-content .title{font-size:60px}
 .banner-area .banner-content ul li:last-child{margin-left:10px}
 .banner-area.banner-style-one{padding-top:200px}
 .banner-area.banner-style-one .banner-content{padding-bottom:100px}
@@ -953,7 +956,7 @@ footer .footer-widget-area .widget.contact-widget .contact-lists .contact-box{gr
 header .nav-container .header-info .item .title{font-size:20px}
 header .nav-container .header-info .item:not(:last-child){margin-right:15px}
 header .nav-container .menu-items ul li a{font-size:14px;padding:0 10px}
-.banner-area .banner-content .title{font-size:100px}
+.banner-area .banner-content .title{font-size:70px}
 .banner-area.banner-style-one .banner-content{padding-bottom:100px}
 .room-gallery-cta .cta-text h2{font-size:72px}
 .room-gallery-cta .rotate-images img.rotate-image-one{left:2%}
@@ -1064,7 +1067,7 @@ header.header-three .search .search-form form input{height:50px}
 .breadcrumb-area .breadcrumb-text h2.page-title{font-size:50px}
 .breadcrumb-area .breadcrumb-text span{font-size:12px}
 .breadcrumb-area .breadcrumb-text .breadcrumb-nav{padding:15px 20px;font-size:14px}
-.banner-area .banner-content .title{font-size:66px}
+.banner-area .banner-content .title{font-size:50px}
 .banner-area .banner-content .main-btn{padding:0 25px;line-height:50px;letter-spacing:1px}
 .about-section .about-title h2{font-size:30px}
 .about-section .about-features{grid-template-columns:repeat(2,1fr);grid-template-rows:3fr}
@@ -1146,7 +1149,7 @@ header.header-three .header-top{display:none}
 header.header-three .nav-container{padding:10px 5px;margin-left:-15px;margin-right:-15px}
 header.header-three .nav-container .site-logo img{max-width:150px}
 header.header-three .search .search-form{right:-100%;top:calc(100% + 12px)}
-.banner-area .banner-content .title{font-size:52px}
+.banner-area .banner-content .title{font-size:40px}
 .banner-area .banner-content ul li:last-child{margin-left:0;margin-top:10px}
 .room-gallery-cta ul li .main-btn{padding:0 15px;letter-spacing:1px;font-size:12px}
 .room-gallery-cta .cta-text h2{font-size:28px}
