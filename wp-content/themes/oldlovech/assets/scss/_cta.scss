@@ -122,16 +122,6 @@
 				}
 			}
 		}
-		&::after {
-			content: '';
-			position: absolute;
-			left: 35px;
-			right: 35px;
-			bottom: -40px;
-			background-color: $primary-color;
-			height: 20px;
-		}
-
 	}
 }
 

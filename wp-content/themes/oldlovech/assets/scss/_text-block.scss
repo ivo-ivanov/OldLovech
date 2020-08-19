@@ -94,6 +94,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: 10px solid #fff;
+	box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.4);
 	@media #{$xsm} {
 		height: 350px;
 	}

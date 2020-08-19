@@ -22,7 +22,7 @@ function my_acf_init() {
 	if( function_exists('acf_register_block') ) {
 
 		acf_register_block(array(
-			'name'				=> 'slider',
+			'name'				=> 'Slider',
 			'title'				=> __('Slider'),
 			'description'		=> __('Slider'),
 			'render_callback'	=> 'my_acf_block_render_callback',
@@ -51,6 +51,17 @@ function my_acf_init() {
 			'category'			=> 'custom',
 			'icon'				=> 'editor-table',
 			'keywords'			=> array( 'About' ),
+			'mode' => 'edit'
+		));
+
+		acf_register_block(array(
+			'name'				=> 'Video',
+			'title'				=> __('Video'),
+			'description'		=> __('Video block.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'video-alt',
+			'keywords'			=> array( 'Video' ),
 			'mode' => 'edit'
 		));
 
@@ -85,7 +96,8 @@ function misha_allowed_block_types( $allowed_blocks, $post ) {
 		'core/group',
 		'acf/slider',
 		'acf/hero',
-		'acf/about'
+		'acf/about',
+		'acf/video'
 	);
 
 	return $allowed_blocks;

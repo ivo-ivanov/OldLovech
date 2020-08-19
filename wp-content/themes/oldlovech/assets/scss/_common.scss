@@ -328,7 +328,24 @@ select {
 		@media #{$tiny} {
 			font-size: 32px;
 		}
+		&.video-heading {
+			font-size: 45px;
+
+			@media #{$lg} {
+				font-size: 40px;
+			}
+			@media #{$md} {
+				font-size: 40px;
+			}
+			@media #{$sm} {
+				font-size: 32px;
+			}
+			@media #{$tiny} {
+				font-size: 32px;
+			}
+		}
 	}
+
 	&.white-color {
 		span.title-tag {
 			color: $primary-color;
