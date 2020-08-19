@@ -4,11 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$subTitle = get_field('subtitle');
-$title = get_field('title');
-$text = get_field('text');
 $infos = get_field('infos');
-$image = get_field('image');
+$backgroundImage = get_field('image');
 $count = 1;
 $countAnimation = 3;
 
@@ -16,7 +13,7 @@ $countAnimation = 3;
 echo '<!--====== CALL TO ACTION END ======-->
 <section class="cta-section pt-115 pb-160">
     <div class="container">
-        <div class="cta-inner">
+        <div class="cta-inner" style="background-image: url('. esc_url($backgroundImage) .');">
             <div class="row justify-content-center">
 
                 <div class="col-lg-9 col-md-10 col-sm-11 col-10 order-1 order-lg-2">
