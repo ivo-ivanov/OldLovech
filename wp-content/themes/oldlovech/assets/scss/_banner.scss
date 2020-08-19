@@ -5,8 +5,8 @@
 			font-size: 14px;
 			font-weight: 700;
 			text-transform: uppercase;
-			letter-spacing: 3px;
-			padding-bottom: 30px;
+			letter-spacing: 2px;
+			margin-bottom: 10px;
 			@media #{$md} {
 				font-size: 12px;
 				letter-spacing: 1px;
@@ -242,15 +242,14 @@
 }
 
 .review-logo {
-	width: 85%;
-	height: 40px;
+	width: 80%;
+	height: 35px;
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: contain;
-	margin-top: 40px;
 }
 
 .review-rating {
 	color: #000;
-	font-size: 30px;
+	font-size: 25px;
 }

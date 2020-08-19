@@ -43,6 +43,17 @@ function my_acf_init() {
 			'mode' => 'edit'
 		));
 
+		acf_register_block(array(
+			'name'				=> 'About',
+			'title'				=> __('About'),
+			'description'		=> __('About block.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'editor-table',
+			'keywords'			=> array( 'About' ),
+			'mode' => 'edit'
+		));
+
 	}
 }
 
@@ -74,6 +85,7 @@ function misha_allowed_block_types( $allowed_blocks, $post ) {
 		'core/group',
 		'acf/slider',
 		'acf/hero',
+		'acf/about'
 	);
 
 	return $allowed_blocks;

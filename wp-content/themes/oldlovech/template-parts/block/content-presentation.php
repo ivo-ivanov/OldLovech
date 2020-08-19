@@ -4,12 +4,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$subTitle = get_field('subtitle');
 $title = get_field('title');
+$text = get_field('slider');
 $buttons = get_field('buttons');
 $button1 = $buttons['button_1'];
 $button2 = $buttons['button_2'];
-$slider = get_field('slider');
+$background = get_field()'background');
+$photo1 = get_field('photo1');
+$photo1 = get_field('photo2');
+$photo1 = get_field('photo3');
 
 
 echo '<!--====== BLOCK HERO START ======-->

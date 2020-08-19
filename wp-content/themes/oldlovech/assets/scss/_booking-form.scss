@@ -5,7 +5,10 @@
 	z-index: 2;
 	.booking-form-inner {
 		background-color: #fff;
-		padding: 10px 40px 40px;
+		padding: 25px 40px;
+		.main-btn {
+			padding: 0 30px;
+		}
 	}
 	form {
 		input,

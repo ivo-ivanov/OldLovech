@@ -111,7 +111,7 @@ textarea{height:250px;padding-top:25px}
 .main-btn.btn-border{border-color:#bead8e}
 .main-btn.btn-border:hover{background-color:#bead8e;color:#fff;box-shadow:0 14px 24px 0 rgba(190,173,142,0.4)}
 .section-title span.title-tag{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:3px;padding-bottom:20px}
-.section-title h2{font-size:80px;line-height:1.125;letter-spacing:-1px}
+.section-title h2{font-size:70px;line-height:1.125;letter-spacing:-1px}
 .section-title.white-color span.title-tag{color:#bead8e}
 .section-title.white-color h2{color:#fff}
 .arrow-style{display:flex;justify-content:flex-end}
@@ -225,7 +225,7 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .breadcrumb-area .breadcrumb-text .breadcrumb-nav li:not(:first-child)::before{position:absolute;left:-2px;top:50%;transform:translateY(-48%);content:'|';color:#222}
 .breadcrumb-area .breadcrumb-text .breadcrumb-nav li.active{color:#bead8e}
 .breadcrumb-area .breadcrumb-text .breadcrumb-nav li.active::before{color:#bead8e}
-.banner-area .banner-content span.promo-tag{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:3px;padding-bottom:30px}
+.banner-area .banner-content span.promo-tag{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px}
 .banner-area .banner-content .title{font-size:80px;line-height:1.1;font-weight:400;letter-spacing:-4px;padding-bottom:26px}
 .banner-area .banner-content ul li{display:inline-block}
 .banner-area .banner-content ul li:last-child{margin-left:24px}
@@ -248,8 +248,8 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .banner-area ul.slick-dots li{display:inline-block;margin:0 5px}
 .banner-area ul.slick-dots li button{border:0;font-size:0;height:10px;width:10px;border-radius:50%;line-height:0;font-size:0}
 .banner-area ul.slick-dots li.slick-active button{background-color:#bead8e}
-.review-logo{width:85%;height:40px;background-repeat:no-repeat;background-position:left center;background-size:contain;margin-top:40px}
-.review-rating{color:#000;font-size:30px}
+.review-logo{width:80%;height:35px;background-repeat:no-repeat;background-position:left center;background-size:contain}
+.review-rating{color:#000;font-size:25px}
 .about-section{position:relative;z-index:1}
 .about-section .down-arrow-wrap{padding-bottom:125px}
 .about-section .down-arrow-wrap a.down-arrow{height:60px;width:60px;text-align:center;line-height:60px;background:#bead8e;border-radius:50%;color:#fff;box-shadow:0 14px 24px 0 rgba(190,173,142,0.3);position:relative}
@@ -314,13 +314,13 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .cta-section .cta-inner .cta-text a.main-btn.btn-filled:hover{background-color:#bead8e;border-color:#bead8e}
 .cta-section .cta-inner .cta-features .single-feature{display:grid;grid-template-rows:1fr;grid-template-columns:120px 1fr;margin-bottom:45px}
 .cta-section .cta-inner .cta-features .single-feature .icon{width:120px;height:120px;border-radius:50%;background-color:#fff;box-shadow:0 8px 16px 0 rgba(190,173,142,0.2);text-align:center;line-height:120px;font-size:60px;color:#bead8e;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s;position:relative;z-index:2}
-.cta-section .cta-inner .cta-features .single-feature .cta-desc{position:relative;padding-left:40px;z-index:1;font-size:14px}
+.cta-section .cta-inner .cta-features .single-feature .cta-desc{position:relative;padding-left:40px;z-index:1;font-size:16px}
 .cta-section .cta-inner .cta-features .single-feature .cta-desc h3{font-size:30px;color:#111;margin-bottom:20px;letter-spacing:-1px}
 .cta-section .cta-inner .cta-features .single-feature .cta-desc .count{position:absolute;font-size:120px;font-weight:700;left:-32px;top:0;line-height:1;-webkit-text-fill-color:transparent;-webkit-text-stroke:1px #111;z-index:-1;color:transparent;opacity:.1}
 .cta-section .cta-inner .cta-features .single-feature:hover .icon{background-color:#bead8e;color:#fff}
 .cta-section .cta-inner .cta-features .single-feature:last-child{margin-bottom:0}
 .cta-section .cta-inner::after{content:'';position:absolute;left:35px;right:35px;bottom:-40px;background-color:#bead8e;height:20px}
-.cta-section .cta-inner::before{content:'\f127';font-family:'Flaticon';left:0;bottom:0;line-height:1;color:#f6f6f6;font-size:350px;position:absolute}
+.cta-section .cta-inner::before{content:'';background:url(http://localhost:3000/wp-content/uploads/2020/08/35912106-1.jpg) center bottom no-repeat;left:0;bottom:0;position:absolute;width:100%;height:100%}
 .room-gallery-cta{position:relative;z-index:1;background-size:cover;background-position:center;padding:120px 0;background-attachment:fixed}
 .room-gallery-cta::before{position:absolute;left:0;top:0;width:100%;height:100%;z-index:-1;background-color:#111;opacity:.7;content:''}
 .room-gallery-cta ul li{display:inline-block;margin:0 10px}
@@ -331,6 +331,7 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .room-gallery-cta .rotate-images img{position:absolute;z-index:1;bottom:0;transform:rotate(-37deg);left:3%;z-index:-1}
 .room-gallery-cta .rotate-images img.rotate-image-one{left:8%;top:0;bottom:auto;max-width:260px;transform:rotate(-37deg)}
 .room-gallery-cta .rotate-images img.rotate-image-three{right:5%;left:auto}
+.about-img{width:80%;margin-top:100px;height:auto;transform:rotate(-37deg);border:5px solid #fff;box-shadow:0 14px 24px 0 rgba(190,173,142,0.4)}
 .text-block.with-bg{background-size:cover;background-position:center;position:relative;z-index:1}
 .text-block.with-bg::after{position:absolute;left:0;top:0;width:100%;height:100%;content:'';background-color:#fff;z-index:-1;opacity:.94}
 .text-block.bg-black p,.text-block.bg-black .section-title h2{color:#fff}
@@ -641,7 +642,8 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .sidebar .widget.popular-tag-widget ul li a:hover{background-color:#bead8e}
 .sidebar .widget.banner-ad-widget{padding:0;border:0}
 .booking-form{position:relative;margin-top:-70px;z-index:2}
-.booking-form .booking-form-inner{background-color:#fff;padding:10px 40px 40px}
+.booking-form .booking-form-inner{background-color:#fff;padding:25px 40px}
+.booking-form .booking-form-inner .main-btn{padding:0 30px}
 .booking-form form input,.booking-form form select,.booking-form form .nice-select{background-color:transparent;width:100%;height:50px;font-size:14px;border:0;border-bottom:2px solid #bead8e;line-height:50px;color:rgba(119,119,119,0.5)}
 .booking-form form .nice-select{border-color:#e9e9e9;padding-left:0}
 .booking-form form .nice-select::after{display:none}
