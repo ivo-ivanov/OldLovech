@@ -85,6 +85,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</header>
 	<!--====== HEADER PART END ======-->
-
-	<!--====== .wrapper START ======-->
-	<div class="wrapper">

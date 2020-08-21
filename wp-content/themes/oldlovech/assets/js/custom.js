@@ -74,8 +74,8 @@ var mirandaDoc;
 
       this.bannerImgSlider(); // this.offCanvas();
       // this.extraPlugin();
-      // this.popUpExtra();
-      // this.searchForm();
+
+      this.popUpExtra(); // this.searchForm();
     },
     //===== 01. Main Menu
     mianMenu: function mianMenu() {

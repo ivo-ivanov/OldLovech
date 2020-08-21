@@ -65,6 +65,17 @@ function my_acf_init() {
 			'mode' => 'edit'
 		));
 
+		acf_register_block(array(
+			'name'				=> 'Presentation',
+			'title'				=> __('Presentation'),
+			'description'		=> __('Presentation block.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'format-gallery',
+			'keywords'			=> array( 'Presentation' ),
+			'mode' => 'edit'
+		));
+
 	}
 }
 
@@ -97,7 +108,8 @@ function misha_allowed_block_types( $allowed_blocks, $post ) {
 		'acf/slider',
 		'acf/hero',
 		'acf/about',
-		'acf/video'
+		'acf/video',
+		'acf/presentation'
 	);
 
 	return $allowed_blocks;

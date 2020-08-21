@@ -11,7 +11,7 @@ $countAnimation = 3;
 
 
 echo '<!--====== CALL TO ACTION END ======-->
-<section class="cta-section pt-115 pb-160">
+<section class="cta-section pt-115 pb-50">
     <div class="container">
         <div class="cta-inner" style="background-image: url('. esc_url($backgroundImage) .');">
             <div class="row justify-content-center">

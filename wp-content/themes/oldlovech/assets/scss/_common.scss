@@ -92,6 +92,10 @@ p {
 	margin: 0px;
 }
 
+article > p {
+	padding: 0 30px 1rem;
+}
+
 a {
 	@include transition(0.3s);
 	&,
@@ -230,10 +234,41 @@ select {
 
 /*=======  COMMON CLASS  =======*/
 
-.wrapper {
+#site-content {
 	min-height: 100vh;
-	padding: 0 30px;
+	// padding: 0 30px;
 }
+
+.wp-block-cover__inner-container p {
+	line-height: 1.1;
+	font-weight: 400;
+	letter-spacing: -4px;
+	font-family: "Old Standard TT", serif;
+    font-weight: normal;
+    font-style: normal;
+	font-size: 80px;
+
+	@media #{$xl} {
+		font-size: 70px;
+	}
+	@media #{$lg} {
+		font-size: 60px;
+	}
+	@media #{$lsm} {
+		font-size: 72px;
+	}
+	@media #{$xsm} {
+		font-size: 50px;
+	}
+	@media #{$tiny} {
+		font-size: 40px;
+	}
+}
+
+.wp-block-gallery {
+	padding: 16px;
+}
+
 .container-custom-one {
 	@media #{$xxl} {
 		max-width: 1600px;

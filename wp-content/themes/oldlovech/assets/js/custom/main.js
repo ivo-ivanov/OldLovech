@@ -53,7 +53,7 @@ var mirandaDoc;
 			this.bannerImgSlider();
 			// this.offCanvas();
 			// this.extraPlugin();
-			// this.popUpExtra();
+			this.popUpExtra();
 			// this.searchForm();
 		},
 
