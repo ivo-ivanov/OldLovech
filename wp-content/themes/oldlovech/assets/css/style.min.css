@@ -130,6 +130,9 @@ textarea{height:250px;padding-top:25px}
 .preloader .cssload-loading i:last-child{animation:cssload-loading-ani1 .58s linear infinite}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal !important}
 .screen-reader-text:focus{background-color:#eee;clip:auto !important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+.wp-block-columns{padding:0 2%}
+.wp-block-column{padding:0 2%}
+.wp-block-column p{margin-bottom:1rem}
 header.header-absolute{position:absolute;left:0;width:100%;z-index:99;background-color:transparent;top:0}
 header .nav-container{padding:8px 20px}
 header .nav-container .toggle{margin-right:50px}
@@ -323,17 +326,18 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .cta-section .cta-inner .cta-features .single-feature .cta-desc .count{position:absolute;font-size:120px;font-weight:700;left:-32px;top:0;line-height:1;-webkit-text-fill-color:transparent;-webkit-text-stroke:1px #111;z-index:-1;color:transparent;opacity:.1}
 .cta-section .cta-inner .cta-features .single-feature:hover .icon{background-color:#bead8e;color:#fff}
 .cta-section .cta-inner .cta-features .single-feature:last-child{margin-bottom:0}
+article>section.block-presentation:first-child{margin-top:96px}
 .room-gallery-cta{position:relative;z-index:1;background-size:cover;background-position:center;padding:120px 0;background-attachment:fixed}
 .room-gallery-cta::before{position:absolute;left:0;top:0;width:100%;height:100%;z-index:-1;background-color:#fff;opacity:.7;content:''}
 .room-gallery-cta ul li{display:inline-block;margin:0 10px}
 .room-gallery-cta ul li .main-btn.btn-filled,.room-gallery-cta ul li .main-btn.btn-border:hover{box-shadow:none}
 .room-gallery-cta ul li .main-btn.btn-filled:hover,.room-gallery-cta ul li .main-btn.btn-border{border-color:rgba(255,255,255,0.2);color:#fff}
-.room-gallery-cta .cta-text h2{font-size:80px;line-height:1.125;letter-spacing:-3px;color:#111}
+.room-gallery-cta .cta-text h2{font-size:45px;line-height:1.125;letter-spacing:-1px;color:#111;padding:10%}
 .room-gallery-cta .cta-text span{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:3px;padding-bottom:20px;color:#bead8e}
-.room-gallery-cta .rotate-images img{position:absolute;z-index:1;bottom:0;transform:rotate(-37deg);left:3%;z-index:-1}
+.room-gallery-cta .rotate-images img{position:absolute;z-index:1;bottom:0;transform:rotate(-37deg);left:3%;z-index:-1;border:6px solid #fff;box-shadow:0 14px 24px 0 rgba(190,173,142,0.4)}
 .room-gallery-cta .rotate-images img.rotate-image-one{left:8%;top:0;bottom:auto;max-width:260px;transform:rotate(-37deg)}
-.room-gallery-cta .rotate-images img.rotate-image-two{left:8%;top:0;bottom:auto;max-width:260px;transform:rotate(-37deg)}
-.room-gallery-cta .rotate-images img.rotate-image-three{right:5%;left:auto}
+.room-gallery-cta .rotate-images img.rotate-image-two{left:8%;bottom:0;top:auto;max-width:260px;transform:rotate(37deg)}
+.room-gallery-cta .rotate-images img.rotate-image-three{right:5%;left:auto;max-width:260px}
 .about-img{width:80%;margin-top:100px;height:auto;transform:rotate(-37deg);border:5px solid #fff;box-shadow:0 14px 24px 0 rgba(190,173,142,0.4)}
 .text-block.with-bg{background-size:cover;background-position:center;position:relative;z-index:1}
 .text-block.with-bg::after{position:absolute;left:0;top:0;width:100%;height:100%;content:'';background-color:#fff;z-index:-1;opacity:.94}
@@ -757,7 +761,7 @@ header.header-three .search .search-form{top:calc(100% + 10px)}
 .room-type-section .room-filter li a{padding:10px 20px}
 .room-type-section .room-items .room-box .room-content{left:15px}
 .cta-section .cta-inner .cta-features .single-feature{grid-template-columns:100px 1fr}
-.room-gallery-cta .cta-text h2{font-size:42px}
+.room-gallery-cta .cta-text h2{font-size:32px}
 .testimonial-box{padding:50px 20px;font-size:14px}
 .testimonial-box h3{font-size:22px}
 .latest-news .latest-post-box .post-desc{padding:35px 18px;font-size:14px}
@@ -833,7 +837,7 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .room-type-section .room-filter{margin-top:30px}
 .room-type-section .room-items .room-box.extra-height{height:280px}
 .cta-section .cta-inner .cta-text{margin-top:60px}
-.room-gallery-cta .cta-text h2{font-size:52px}
+.room-gallery-cta .cta-text h2{font-size:32px}
 .room-gallery-cta .rotate-images img.rotate-image-one{left:1%;max-width:180px}
 .room-gallery-cta .rotate-images img.rotate-image-two{left:1%;max-width:180px}
 .room-gallery-cta .rotate-images img.rotate-image-three{left:auto;right:1%;max-width:200px}
@@ -903,7 +907,7 @@ header.header-three .nav-container .menu-right-buttons>div{margin-left:5px}
 .cta-section .cta-inner .cta-features .single-feature{grid-template-columns:100px 1fr}
 .cta-section .cta-inner .cta-features .single-feature .icon{height:100px;width:100px;line-height:100px;font-size:40px}
 .cta-section .cta-inner .cta-features .single-feature .cta-desc h3{font-size:26px}
-.room-gallery-cta .cta-text h2{font-size:60px}
+.room-gallery-cta .cta-text h2{font-size:40px}
 .room-gallery-cta .rotate-images img.rotate-image-one{left:2%;max-width:220px}
 .room-gallery-cta .rotate-images img.rotate-image-two{left:2%;max-width:220px}
 .room-gallery-cta .rotate-images img.rotate-image-three{left:auto;right:2%;max-width:250px}
@@ -970,7 +974,7 @@ header .nav-container .header-info .item:not(:last-child){margin-right:15px}
 header .nav-container .menu-items ul li a{font-size:14px;padding:0 10px}
 .banner-area .banner-content .title{font-size:70px}
 .banner-area.banner-style-one .banner-content{padding-bottom:100px}
-.room-gallery-cta .cta-text h2{font-size:72px}
+.room-gallery-cta .cta-text h2{font-size:40px}
 .room-gallery-cta .rotate-images img.rotate-image-one{left:2%}
 .room-gallery-cta .rotate-images img.rotate-image-two{left:2%}
 .room-gallery-cta .rotate-images img.rotate-image-three{left:auto;right:2%;max-width:250px}

@@ -24,11 +24,17 @@ echo '<!--====== BLOCK PRESENTATION START ======-->
 			</div>
 		</div>
 	</div>
-	<div class="rotate-images">
-		<img src="'. esc_url($photo1) .'" class="rotate-image-one" alt="Image">
-		<img src="'. esc_url($photo2) .'" class="rotate-image-two" alt="Image">
-		<img src="'. esc_url($photo3) .'" class="rotate-image-three" alt="Image">
-	</div>
+	<div class="rotate-images">';
+		if($photo1){
+			echo '<img src="'. esc_url($photo1) .'" class="rotate-image-one" alt="Image">';
+		}
+		if($photo2){
+			echo '<img src="'. esc_url($photo2) .'" class="rotate-image-two" alt="Image">';
+		}
+		if($photo3){
+			echo '<img src="'. esc_url($photo3) .'" class="rotate-image-three" alt="Image">';
+		}
+	echo '</div>
 </section>
 <!--====== BLOCK PRESENTATION ENDS ======-->';
 ?>

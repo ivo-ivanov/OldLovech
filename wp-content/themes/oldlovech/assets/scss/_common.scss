@@ -604,3 +604,15 @@ select {
   width: auto;
   z-index: 100000; /* Above WP toolbar. */
 }
+
+.wp-block-columns {
+	padding: 0 2%;
+}
+
+.wp-block-column {
+	padding: 0 2%;
+}
+
+.wp-block-column p {
+	margin-bottom: 1rem;
+}
