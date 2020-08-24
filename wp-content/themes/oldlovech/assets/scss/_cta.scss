@@ -239,7 +239,7 @@ article > section.block-presentation:first-child {
 				left: 8%;
 				top: 0;
 				bottom: auto;
-				max-width: 260px;
+				max-width: 280px;
 				transform: rotate(-37deg);
 				@media #{$xl} {
 					left: 2%;
@@ -264,7 +264,7 @@ article > section.block-presentation:first-child {
 				left: 8%;
 				bottom: 0;
 				top: auto;
-				max-width: 260px;
+				max-width: 280px;
 				transform: rotate(37deg);
 				@media #{$xl} {
 					left: 2%;
@@ -288,7 +288,7 @@ article > section.block-presentation:first-child {
 			&.rotate-image-three {
 				right: 5%;
 				left: auto;
-				max-width: 260px;
+				max-width: 280px;
 				@media #{$xl} {
 					left: auto;
 					right: 2%;

@@ -41,7 +41,7 @@ var mirandaDoc;
 		init: function () {
 			this.mianMenu();
 			// this.bannerSlider();
-			// this.roomSlider();
+			this.roomSlider();
 			// this.testimonialSlider();
 			// this.latestPostlider();
 			// this.featureRoom();

@@ -62,8 +62,8 @@ var mirandaDoc;
   mirandaDoc = {
     init: function init() {
       this.mianMenu(); // this.bannerSlider();
-      // this.roomSlider();
-      // this.testimonialSlider();
+
+      this.roomSlider(); // this.testimonialSlider();
       // this.latestPostlider();
       // this.featureRoom();
       // this.counterToUp();

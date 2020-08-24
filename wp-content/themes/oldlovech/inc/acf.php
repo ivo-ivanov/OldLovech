@@ -76,6 +76,17 @@ function my_acf_init() {
 			'mode' => 'edit'
 		));
 
+		acf_register_block(array(
+			'name'				=> 'slider',
+			'title'				=> __('Slider'),
+			'description'		=> __('Image slider with text block'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'align-pull-left',
+			'keywords'			=> array( 'slider', 'content slider', 'info slider' ),
+			'mode' => 'edit'
+		));
+
 	}
 }
 
@@ -109,7 +120,8 @@ function misha_allowed_block_types( $allowed_blocks, $post ) {
 		'acf/hero',
 		'acf/about',
 		'acf/video',
-		'acf/presentation'
+		'acf/presentation',
+		'acf/slider'
 	);
 
 	return $allowed_blocks;
