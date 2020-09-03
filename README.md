@@ -1,5 +1,3 @@
-# Blanky
-Blank WordPress Theme made with wpgulp
+# OldLovech WordPress Theme
 
-- Support for ACF
-- Encode emails
+[oldlovech.com](https://www.oldlovech.com)
