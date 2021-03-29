@@ -1,13 +1,18 @@
+# WPGULP #
+############
+gulpfile.babel.js
+package-lock.json
+package.json
+wpgulp.config.js
+.eslintrc.js
+.eslintignore
+.editorconfig
+
 # NPM #
 ##########
 # Ignore all directories called node_modules in current folder and any subfolders.
 node_modules/
 /node_modules/
-package-lock.json
-package.json
-gulpfile.babel.js
-phpcs.xml
-wpgulp.config.js
 
 # Packages #
 ############
@@ -37,37 +42,11 @@ Icon?
 Thumbs.db
 ._*
 
-# Vim generated files #
-######################
-*.un~
-
 # SASS #
 ##########
 **/.sass-cache
 **/.sass-cache/*
-**/.map
-
-# Composer #
-##########
-!assets/js/vendor/
-wpcs/
-/vendor/
-
-# Bower #
-##########
-assets/bower_components/*
-
-# Codekit #
-##########
-/codekit-config.json
-*.codekit
-**.codekit-cache/*
 
 # Compiled Files and Build Dirs #
 ##########
 /README.html
-
-# PhpStrom Project Files #
-.idea/
-library/vendors/composer
-assets/img/.DS_Store
