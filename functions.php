@@ -130,7 +130,7 @@ function wpblank_register_styles() {
 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/vendor/bootstrap.min.css', array(), $theme_version );
 
-	wp_enqueue_style( 'bootstrap-datepicker', get_template_directory_uri() . '/assets/css/vendor/bootstrap-datepicker.css', array(), $theme_version );
+	// wp_enqueue_style( 'bootstrap-datepicker', get_template_directory_uri() . '/assets/css/vendor/bootstrap-datepicker.css', array(), $theme_version );
 
 	wp_enqueue_style( 'default', get_template_directory_uri() . '/assets/css/vendor/default.css', array(), $theme_version );
 
@@ -173,6 +173,8 @@ function wpblank_register_scripts() {
 	wp_enqueue_script( 'popup', get_template_directory_uri() . '/assets/js/vendor/jquery.magnific-popup.min.js', array('jquery'), $theme_version, false );
 	wp_script_add_data( 'popup', 'async', true );
 
+	wp_enqueue_script( 'nice-select', get_template_directory_uri() . '/assets/js/vendor/jquery.nice-select.min.js', array('jquery'), $theme_version, false );
+	wp_script_add_data( 'nice-select', 'async', true );
 
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery', 'slick', 'wow', 'popup'), $theme_version, false );
 	wp_script_add_data( 'custom-js', 'async', true );

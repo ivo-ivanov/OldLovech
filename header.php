@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/http://localhost:3000/wp-content/themes/oldlovech/assets/images/favicon.ico" />
+		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/images/favicon.ico" />
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 		<?php wp_head(); ?>
@@ -32,11 +32,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<body <?php body_class(); ?>>
 
 	<!--====== PRELOader ======-->
-	<!-- <div class="preloader d-flex align-items-center justify-content-center">
+	<div class="preloader d-flex align-items-center justify-content-center">
 		<div class="cssload-container">
 			<div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
 		</div>
-	</div> -->
+	</div>
 	<!--====== HEADER START ======-->
 	<header class="header-absolute sticky-header">
 		<div class="container container-custom-one">

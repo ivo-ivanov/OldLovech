@@ -582,8 +582,6 @@ var mirandaDoc;
 
 		//===== 14. init extra plugin
 		extraPlugin() {
-			// init nice selects
-			$('select').niceSelect();
 
 			// init datepicker
 			$('#arrival-date, #departure-date').datepicker({
@@ -664,4 +662,6 @@ var mirandaDoc;
 		if (scroll > 300) $('#backToTop').addClass('active');
 		if (scroll < 300) $('#backToTop').removeClass('active');
 	});
+
+
 })(jQuery);

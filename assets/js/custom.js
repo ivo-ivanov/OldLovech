@@ -501,9 +501,7 @@ var mirandaDoc;
     },
     //===== 14. init extra plugin
     extraPlugin: function extraPlugin() {
-      // init nice selects
-      $('select').niceSelect(); // init datepicker
-
+      // init datepicker
       $('#arrival-date, #departure-date').datepicker({
         format: 'd-m-yyyy',
         autoclose: true

@@ -10,6 +10,8 @@ $buttons = get_field('buttons');
 $button1 = $buttons['button_1'];
 $button2 = $buttons['button_2'];
 $slider = get_field('slider');
+$reviews = get_field('reviews');
+$booking = get_field('booking');
 
 
 echo '<!--====== BLOCK HERO START ======-->
@@ -62,7 +64,6 @@ echo '<!--====== BLOCK HERO START ======-->
 
 		echo '</div>';
 
-		$reviews = get_field('reviews');
 		if($reviews) {
 		echo '<section class="booking-form boxed-layout">
 
@@ -71,22 +72,25 @@ echo '<!--====== BLOCK HERO START ======-->
 				<div class="booking-form-inner justify-content-center">
 						<div class="row align-items-center">';
 
-						foreach($reviews as $review) {
+							foreach($reviews as $review) {
 
-							$logo = $review['logo'];
-							$rating = $review['rating'];
+								$logo = $review['logo'];
+								$rating = $review['rating'];
 
-							echo '<div class="col-lg-3 col-md-6">
-								<div class="review-logo" style="background-image:url('. esc_url($logo) .')"></div>
-								<div class="review-rating">'. esc_html($rating) .'</div>
-							</div>';
+								echo '<div class="col-lg-3 col-md-6">
+									<div class="review-logo" style="background-image:url('. esc_url($logo) .')"></div>
+									<div class="review-rating">'. esc_html($rating) .'</div>
+								</div>';
 
-						}
+							}
 
-							echo' <div class="col-lg-3 col-md-6">
-								<a class="main-btn btn-filled wow fadeInUp" data-wow-delay=".7s" href="#1">Резервация</a>
-							</div>
-						</div>
+							if($booking) {
+								echo' <div class="col-lg-3 col-md-6">
+									<a class="main-btn btn-filled wow fadeInUp" data-wow-delay=".7s" href="'. esc_url($booking['button_url']) .'">'. esc_html($booking['button']) .'</a>
+								</div>';
+							}
+
+					echo '</div>
 				</div>
 			</div>
 		</div>

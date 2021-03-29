@@ -10,7 +10,7 @@ $videoThumb = get_field('video_thumbnail');
 
 
 echo '<!--====== TEXT BLOCK START ======-->
-<section class="block-video acf-block text-block pt-115">
+<section class="block-video acf-block text-block pt-115" id="video-block">
     <div class="container">
         <div class="row align-items-center justify-content-center justify-content-lg-between">
 			<div class="col-lg-7 col-md-10 wow fadeInRight" data-wow-delay=".5s">
