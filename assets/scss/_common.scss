@@ -9,6 +9,7 @@ body {
 	overflow-x: hidden;
 	font-size: 16px;
 	line-height: 1.6;
+	opacity: 0.2;
 	background: url('../images/texture-tile.jpg') center center repeat $main-bg;
 	@media #{$tiny} {
 		font-size: 14px;
