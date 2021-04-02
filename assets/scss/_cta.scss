@@ -129,6 +129,9 @@
 
 article > section.block-presentation:first-child {
 	margin-top: 96px;
+	@media #{$sm} {
+		margin-top: 72px;
+	}
 }
 
 .room-gallery-cta {
@@ -324,4 +327,25 @@ article > section.block-presentation:first-child {
 	transform: rotate(-37deg);
 	border: 5px solid #fff;
     box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.4);
+}
+
+.cta-section.pt-115 {
+	@media #{$lg} {
+		padding-top: 60px;
+	}
+	@media #{$sm} {
+		padding-top: 60px;
+	}
+}
+
+.home .cta-section {
+	@media #{$sm} {
+		padding-top: 0px;
+	}
+}
+
+article > .wp-block-spacer {
+	@media #{$sm} {
+		height:72px!important;
+	}
 }

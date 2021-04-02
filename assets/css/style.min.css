@@ -154,6 +154,9 @@ textarea{height:250px;padding-top:25px}
 .wpcf7-form .wpcf7-submit:hover{background:#000;border-color:#000}
 .wpcf7-form .wpcf7-form-control-wrap{width:100%}
 .mgl-tiles-container{padding:5%}
+.wp-block-media-text.is-image-fill .wp-block-media-text__media{border:10px solid #fff;-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.25);box-shadow:0 1px 4px rgba(0,0,0,0.25)}
+.wpcf7 .ajax-loader{margin-top:20px;margin-left:calc(50% - 12px)}
+.wp-block-media-text .wp-block-media-text__content{padding:15px}
 header.header-absolute{position:absolute;left:0;width:100%;z-index:99;background-color:transparent;background-color:#fff;-webkit-box-shadow:0 5px 5px 0 rgba(0,0,0,0.04);box-shadow:0 5px 5px 0 rgba(0,0,0,0.04);top:0}
 header .nav-container{padding:8px 20px}
 header .nav-container .toggle{margin-right:50px}
@@ -163,7 +166,7 @@ header .nav-container .site-logo .sticky-logo{display:none}
 header .nav-container .header-info .item{padding-left:40px;position:relative}
 header .nav-container .header-info .item i{position:absolute;left:0;top:0;height:30px;width:30px;text-align:center;line-height:30px;border-radius:4px;background:#111;color:#fff;font-size:14px}
 header .nav-container .header-info .item span{font-weight:600;font-size:14px;padding-bottom:4px}
-header .nav-container .header-info .item a{display:block}
+header .nav-container .header-info .item a{display:block;color:#111;font-weight:bold}
 header .nav-container .header-info .item .title{font-size:24px;font-weight:400}
 header .nav-container .header-info .item:not(:last-child){margin-right:45px}
 header .nav-container .menu-items ul li{display:inline-block;position:relative}
@@ -821,8 +824,13 @@ footer .footer-widget-area .widget.site-info-widget{font-size:14px}
 footer .footer-widget-area .widget.site-info-widget .social-links a{height:35px;width:35px;line-height:35px;font-size:14px;margin-right:2px}
 footer .footer-widget-area .widget.contact-widget{padding-left:20px}
 }@media only screen and (min-width:768px) and (max-width:991px){.section-title h2{font-size:52px}
-.section-title h2.video-heading{font-size:40px}
+.section-title h2.video-heading{font-size:32px}
+.wp-block-columns h1.has-background,.wp-block-columns h2.has-background,.wp-block-columns h3.has-background,.wp-block-columns h4.has-background,.wp-block-columns h5.has-background,.wp-block-columns h6.has-background{padding:40px 40px 40px 40px}
+.wp-block-columns .wp-block-column .flat-custom:before{font-size:25px}
+.wp-block-column h2.flat-custom{font-size:18px !important}
+header .nav-container{padding:20px 0}
 header .nav-container .toggle{display:none}
+header .nav-container .site-logo img{max-width:180px}
 header .nav-container .header-info{padding:40px 20px 0}
 header .nav-container .header-info .item{color:#fff}
 header .nav-container .header-info .item .title{color:#fff;font-size:22px}
@@ -838,9 +846,8 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .breadcrumb-area{margin-top:100px}
 .banner-area .banner-content span.promo-tag{font-size:12px;letter-spacing:1px}
 .banner-area .banner-content ul li:last-child{margin-left:10px}
-.banner-area.banner-style-one{padding-top:160px;padding-bottom:120px}
 .banner-area.banner-style-one .banner-content .title{font-size:66px}
-.banner-area.banner-style-one .banner-content ul li:last-child{margin-left:5px}
+.banner-area.banner-style-one .banner-content ul li:last-child{margin-left:20px}
 .banner-area.banner-style-one .banner-content .main-btn{padding:0 20px;line-height:50px;letter-spacing:1px}
 .banner-area.banner-style-two .banner-content h1,.banner-area.banner-style-three .banner-content h1{font-size:90px}
 .about-section .down-arrow-wrap{padding-bottom:90px}
@@ -896,7 +903,7 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .news-details-box .entry-footer .related-post-box .desc{padding:30px}
 .news-details-box .entry-footer .related-post-box .desc h4{font-size:22px}
 .sidebar{margin-top:80px}
-.booking-form.boxed-layout{margin-top:0}
+.booking-form.boxed-layout{margin-top:40px}
 .places-boxes .place-box .desc{padding:20px 15px}
 .places-boxes .place-box .desc h4{font-size:22px}
 .places-details .title-wrap h2{font-size:38px}
@@ -905,11 +912,16 @@ footer .footer-widget-area .widget.contact-widget{padding-left:70px}
 footer .copyright-area .social-links a{margin-left:5px;width:50px;height:50px;line-height:50px}
 }@media only screen and (min-width:992px) and (max-width:1199px){.wp-block-cover__inner-container p{font-size:60px}
 .section-title h2{font-size:62px}
-.section-title h2.video-heading{font-size:40px}
+.section-title h2.video-heading{font-size:37px}
+.wp-block-columns h1.has-background,.wp-block-columns h2.has-background,.wp-block-columns h3.has-background,.wp-block-columns h4.has-background,.wp-block-columns h5.has-background,.wp-block-columns h6.has-background{padding:40px 40px 40px 40px}
+.wp-block-columns .wp-block-column .flat-custom:before{font-size:25px;display:none}
+.wp-block-column h2.flat-custom{font-size:18px !important}
 header .container.container-custom-one{max-width:100%}
 header .nav-container .toggle{margin-right:20px}
 header .nav-container .toggle{margin-right:15px}
 header .nav-container .site-logo img{max-width:200px}
+header .nav-container .header-info{display:inline-block !important}
+header .nav-container .header-info .item:nth-child(1){margin-bottom:10px}
 header .nav-container .header-info .item .title{font-size:16px}
 header .nav-container .header-info .item:not(:last-child){margin-right:15px}
 header .nav-container .menu-items ul li a{padding:0 8px}
@@ -917,7 +929,7 @@ header.header-three .nav-container{padding:0 10px}
 header.header-three .nav-container .menu-right-buttons>div{margin-left:5px}
 .banner-area .banner-content .title{font-size:60px}
 .banner-area .banner-content ul li:last-child{margin-left:10px}
-.banner-area.banner-style-one{padding-top:200px}
+.banner-area.banner-style-one{padding-top:140px;height:auto}
 .banner-area.banner-style-one .banner-content{padding-bottom:100px}
 .about-section .about-features{grid-column-gap:20px}
 .about-section .about-features li a .title{letter-spacing:2px}
@@ -932,6 +944,9 @@ header.header-three .nav-container .menu-right-buttons>div{margin-left:5px}
 .room-gallery-cta .rotate-images img.rotate-image-one{left:2%;max-width:220px}
 .room-gallery-cta .rotate-images img.rotate-image-two{left:2%;max-width:220px}
 .room-gallery-cta .rotate-images img.rotate-image-three{left:auto;right:2%;max-width:250px}
+.cta-section.pt-115{padding-top:60px}
+.block-video.pt-115{padding-top:70px}
+.video-wrap{height:350px}
 .video-wrap.video-wrap-two a.popup-video{height:100px;width:100px;line-height:100px}
 .testimonial-box{padding:50px 20px}
 .testimonial-box h3{font-size:26px}
@@ -1002,14 +1017,21 @@ header .nav-container .menu-items ul li a{font-size:14px;padding:0 10px}
 }@media(min-width:1600px){.container-custom-one{max-width:1600px}
 .container-custom-two{max-width:1400px}
 .container-custom-three{max-width:1420px}
-}@media(max-width:767px){.section-title span.title-tag{letter-spacing:2px}
+}@media(max-width:769px){.section-title span.title-tag{letter-spacing:2px}
 .section-title h2{font-size:42px}
-.section-title h2.video-heading{font-size:32px}
+.section-title h2.video-heading{font-size:32px;margin-top:15px}
+.wp-block-columns h1.has-background,.wp-block-columns h2.has-background,.wp-block-columns h3.has-background,.wp-block-columns h4.has-background,.wp-block-columns h5.has-background,.wp-block-columns h6.has-background{padding:40px 40px 40px 40px}
+.wp-block-columns .wp-block-column .flat-custom:before{font-size:25px}
+.wp-block-column h2.flat-custom{font-size:18px !important}
+.wp-block-media-text{display:block}
+.wp-block-media-text+p{display:none}
+em br{display:none}
 header .nav-container .toggle{display:none}
 header .nav-container .header-info{padding:40px 20px 0}
 header .nav-container .header-info .item{color:#fff}
 header .nav-container .header-info .item .title{color:#fff;font-size:22px}
 header .nav-container .header-info .item:not(:last-child){margin-right:0;margin-bottom:30px}
+header .nav-container .navbar-toggler{margin-right:-10px}
 header.header-two .header-info .item i{color:#111}
 header.header-three .header-top{text-align:center;padding-bottom:50px}
 header.header-three .header-top ul.header-top-info{margin-top:10px}
@@ -1021,7 +1043,8 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .breadcrumb-area .breadcrumb-text span{letter-spacing:2px}
 .banner-area .banner-content span.promo-tag{font-size:12px;letter-spacing:1px}
 .banner-area .banner-content ul li:last-child{margin-left:5px}
-.banner-area.banner-style-one{padding-top:160px;padding-bottom:100px}
+.banner-area.banner-style-one{padding-top:100px;padding-bottom:15px;height:auto}
+.banner-area.banner-style-one .banner-content .title{font-size:40px;letter-spacing:.02px}
 .banner-area.banner-style-two .single-banner,.banner-area.banner-style-three .single-banner{height:700px}
 .about-section .down-arrow-wrap{padding-bottom:90px}
 .about-section .about-features{grid-template-columns:repeat(3,1fr);grid-template-rows:2fr;grid-column-gap:15px;margin-top:60px}
@@ -1038,14 +1061,20 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .room-type-section .room-items .room-box .room-link{height:40px;width:40px;text-align:center;right:10px;line-height:40px}
 .cta-section .cta-inner .cta-text{margin-top:60px}
 .cta-section .cta-inner .cta-features .single-feature .icon{height:100px;width:100px;line-height:100px;font-size:40px}
+article>section.block-presentation:first-child{margin-top:72px}
 .room-gallery-cta ul li{margin:0 5px}
 .room-gallery-cta ul li .main-btn{padding:0 25px;letter-spacing:1px}
 .room-gallery-cta .rotate-images img{max-width:150px}
 .room-gallery-cta .rotate-images img.rotate-image-one{left:1%;max-width:150px}
 .room-gallery-cta .rotate-images img.rotate-image-two{left:1%;max-width:150px}
 .room-gallery-cta .rotate-images img.rotate-image-three{left:auto;right:1%;max-width:150px}
+.cta-section.pt-115{padding-top:60px}
+.home .cta-section{padding-top:0}
+article>.wp-block-spacer{height:72px !important}
 .text-block.with-pattern .pattern-wrap{width:100%;height:320px}
 .text-block .mb-small{margin-bottom:50px}
+.block-video.pt-115{padding-top:20px}
+.block-video .row>div{width:100%;max-width:100%;-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%}
 .video-wrap.video-wrap-two a.popup-video{width:80px;height:80px;line-height:80px}
 .video-wrap.full-section{height:380px}
 .video-wrap.full-section a.popup-video img{max-width:80px;max-height:80px}
@@ -1090,7 +1119,9 @@ header.sticky-header.sticky-active.header-two .header-info .item a,header.sticky
 .news-details-box .entry-footer .author-info-box .info-text h3{font-size:22px}
 .news-details-box .comment-template h3.box-title{font-size:24px}
 .sidebar{margin-top:80px}
-.booking-form.boxed-layout{margin-top:0}
+.booking-form .booking-form-inner .col-lg-3:nth-child(1),.booking-form .booking-form-inner .col-lg-3:nth-child(2){padding-bottom:10px}
+.booking-form.boxed-layout{margin-top:40px}
+.booking-form.boxed-layout .col-11{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;padding:0}
 .places-details .title-wrap .link a{padding:20px 30px}
 footer .footer-widget-area .widget.nav-widget{padding-left:0}
 footer .copyright-area .social-links{text-align:center;margin-bottom:10px}
@@ -1187,6 +1218,9 @@ footer .copyright-area .copyright-text{letter-spacing:0}
 .section-title span.title-tag{font-size:12px}
 .section-title h2{font-size:32px}
 .section-title h2.video-heading{font-size:32px}
+.wp-block-columns h1.has-background,.wp-block-columns h2.has-background,.wp-block-columns h3.has-background,.wp-block-columns h4.has-background,.wp-block-columns h5.has-background,.wp-block-columns h6.has-background{padding:40px 40px 40px 40px}
+.wp-block-columns .wp-block-column .flat-custom:before{font-size:25px}
+.wp-block-column h2.flat-custom{font-size:18px !important}
 header.header-three .main-menu-area{position:relative;bottom:0;top:0}
 header.header-three .header-top{display:none}
 header.header-three .nav-container{padding:10px 5px;margin-left:-15px;margin-right:-15px}

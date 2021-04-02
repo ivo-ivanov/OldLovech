@@ -1,10 +1,10 @@
 {
     "key": "group_5f3ac8514a617",
-    "title": "Social Media",
+    "title": "Options",
     "fields": [
         {
             "key": "field_5f3acb11ea85e",
-            "label": "Social Links",
+            "label": "Социални мрежи",
             "name": "media",
             "type": "repeater",
             "instructions": "",
@@ -65,6 +65,43 @@
                     "placeholder": ""
                 }
             ]
+        },
+        {
+            "key": "field_60622c380bc0d",
+            "label": "E-Mail",
+            "name": "email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_60622c4e0bc0e",
+            "label": "Телефон",
+            "name": "telephone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -84,5 +121,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1597689954
+    "modified": 1617046794
 }

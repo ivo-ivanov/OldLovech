@@ -62,20 +62,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="nav-pushed-item"></div>
 				</div>
 
+				<?php $fields = get_fields('options');
+				$tel = $fields['telephone'];
+				$email = $fields['email'];
+				?>
+
+				<?php if($tel || $email) { ?>
 				<!-- Header Info Pussed To Menu Wrap -->
 				<div class="nav-push-item">
 					<!-- Header Info -->
 					<div class="header-info d-lg-flex align-items-center">
+						<?php if($tel) { ?>
 						<div class="item">
 							<i class="fal fa-phone"></i>
-							<a href="tel:+359885875689">+359 885 875 689</a>
+							<a href="tel:<?php echo esc_html($tel); ?>"><?php echo esc_html($tel); ?></a>
 						</div>
+						<?php } ?>
+
+						<?php if($email) { ?>
 						<div class="item">
 							<i class="fal fa-envelope"></i>
-							<a href="mailto:dmtrlalev@gmail.com">dmtrlalev@gmail.com</a>
+							<a href="mailto:<?php echo esc_html($email);?>"><?php echo esc_html($email);?></a>
 						</div>
+						<?php } ?>
 					</div>
 				</div>
+				<?php } ?>
 
 				<!-- Navbar Toggler -->
 				<div class="navbar-toggler">
